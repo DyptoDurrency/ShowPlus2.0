@@ -1,0 +1,46 @@
+h1 {
+   text-align: center; 
+}
+
+.jumbotron {
+    /*background-color: purple;*/
+    /*color: green;*/
+}
+.card-footer {
+    margin-top: 20px;
+    border-top: 0px;
+}
+
+.card-body {
+   padding: 1rem; 
+}
+
+.card-footer {
+   padding: 1rem;  
+}
+
+.delete-form-btn {
+    display: inline;
+}
+
+
+/*.campground-imgs {*/
+/*    border: 2px solid red;*/
+/*    object-fit: cover;*/
+/*    height: 200px;*/
+/*    width: 100%;*/
+/*}*/
+
+.card-img-top {
+    height: 250px;
+    width: 100%;
+}
+
+#campForm {
+    width: 40%;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 40px;
+}
