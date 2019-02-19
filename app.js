@@ -16,7 +16,7 @@ var commentRoutes       = require("./routes/comments"),
     exhibitionRoutes    = require("./routes/exhibitions"),
     indexRoutes         = require("./routes/index");
 
-mongoose.connect("mongodb+srv://DyptoDurrency:Testtest!1@cluster0-xouyi.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://DyptoDurrency:Testtest!1@cluster0-rayah.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
