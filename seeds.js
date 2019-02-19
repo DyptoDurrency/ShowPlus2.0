@@ -38,7 +38,7 @@ function seedDB(){
         if(err){
             console.log(err);
         }
-        console.log("removed exhibtions!");
+        console.log("removed exhibitions!");
         Comment.deleteMany({}, function(err) {
             if(err){
                 console.log(err);

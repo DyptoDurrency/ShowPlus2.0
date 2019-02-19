@@ -1,5 +1,5 @@
 // all the middleware goes here
-var Exhibition = require("../models/exhibtion");
+var Exhibition = require("../models/exhibition");
 var Comment = require("../models/comment");
 
 
