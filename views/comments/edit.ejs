@@ -3,8 +3,8 @@
 <div class="container">
     <h1>Edit Comment: </h1>
     <div class="row">
-       <div id="campForm">
-            <form action= "/campgrounds/<%=campground_id %>/comments/<%=comment._id%>?_method=PUT" method="POST">
+       <div id="showForm">
+            <form action= "/exhibitions/<%=exhibition_id %>/comments/<%=comment._id%>?_method=PUT" method="POST">
                 <div class="form-group">
                   <input class="form-control" type="text" name="comment[text]" value="<%=comment.text%>">
                 </div>
@@ -15,7 +15,7 @@
                 
             </form>
             <!--<br>-->
-            <a href="/campgrounds">Go Back</a>
+            <a href="/exhibitions">Go Back</a>
         </div>
     </div>
 </div>

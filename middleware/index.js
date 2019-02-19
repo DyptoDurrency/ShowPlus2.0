@@ -1,22 +1,22 @@
 // all the middleware goes here
-var Campground = require("../models/campground");
+var Exhibition = require("../models/exhibtion");
 var Comment = require("../models/comment");
 
 
 var middlewareObj = {};
 
-middlewareObj.checkCampgroundOwnership = function(req, res, next){
+middlewareObj.checkExhibitionOwnership = function(req, res, next){
     if(req.isAuthenticated()){
         
-        Campground.findById(req.params.id, function(err, foundCampground){
-            if(err || !foundCampground){
+        Exhibition.findById(req.params.id, function(err, foundExhibition){
+            if(err || !foundExhibition){
               console.log(err);
-              req.flash('error', 'Sorry, that campground does not exist!');
-              res.redirect('/campgrounds');
+              req.flash('error', 'Sorry, that exhibition does not exist!');
+              res.redirect('/exhibitions');
             } else {
                 
-                // if yes, own campground? or redirect
-                if(foundCampground.author.id.equals(req.user._id)) {
+                // if yes, own exhibition? or redirect
+                if(foundExhibition.author.id.equals(req.user._id)) {
                     next();
                 } else {
                     req.flash("error", "You don't have permission to do that");
@@ -37,7 +37,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next){
                 if(err || !foundComment){
                    console.log(err);
                    req.flash('error', 'Sorry, that comment does not exist!');
-                   res.redirect('/campgrounds');
+                   res.redirect('/exhibitions');
                 } else {
                 // if yes, own comment? or redirect
                 if(foundComment.author.id.equals(req.user._id)) {

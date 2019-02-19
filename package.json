@@ -1,13 +1,13 @@
 {
-  "name": "yelpcamp_one",
+  "name": "showplus",
   "version": "1.0.0",
-  "description": "v1 of yelpcamp",
+  "description": "rework of showplus",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "jasper",
+  "author": "jasper verhoeven",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",

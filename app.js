@@ -6,17 +6,17 @@ var express = require("express"),
     passport = require("passport"),
     LocalStrategy = require("passport-local"),
     methodOverride = require("method-override"),
-    Campground = require("./models/campground"),
+    Exhibition = require("./models/exhibition"),
     seedDB = require("./seeds"),
     User = require("./models/user"),
     Comment = require("./models/comment");
 
 // requiring routes
 var commentRoutes       = require("./routes/comments"),
-    campgroundRoutes    = require("./routes/campgrounds"),
+    exhibitionRoutes    = require("./routes/exhibitions"),
     indexRoutes         = require("./routes/index");
 
-mongoose.connect("mongodb+srv://DyptoDurrency:156Crypto.,@cluster0-xouyi.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://DyptoDurrency:Testtest!1@cluster0-xouyi.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
@@ -47,11 +47,11 @@ app.use(function(req, res, next){
 });
 
 app.use("/", indexRoutes);
-app.use("/campgrounds/:id/comments", commentRoutes);
-app.use("/campgrounds", campgroundRoutes);
+app.use("/exhibitions/:id/comments", commentRoutes);
+app.use("/exhibitions", exhibitionRoutes);
 
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("The YelpCamp server has started!");
+    console.log("The ShowPlus server has started!");
 });

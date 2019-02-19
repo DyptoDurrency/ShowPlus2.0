@@ -24,7 +24,7 @@ h1 {
 }
 
 
-/*.campground-imgs {*/
+/*.exhibition-imgs {*/
 /*    border: 2px solid red;*/
 /*    object-fit: cover;*/
 /*    height: 200px;*/
@@ -36,7 +36,7 @@ h1 {
     width: 100%;
 }
 
-#campForm {
+#showForm {
     width: 40%;
     margin: 0 auto;
 }

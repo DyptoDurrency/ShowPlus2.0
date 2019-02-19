@@ -1,10 +1,10 @@
 <% include ../partials/header %>
 
 <div class="container">
-    <h1>Add New Comment to <%= campground.name %> </h1>
+    <h1>Add New Comment to <%= exhibition.name %> </h1>
     <div class="row">
-       <div id="campForm">
-            <form action= "/campgrounds/<%=campground._id %>/comments" method="POST">
+       <div id="showForm">
+            <form action= "/exhibitions/<%=exhibition._id %>/comments" method="POST">
                 <div class="form-group">
                   <input class="form-control" type="text" name="comment[text]" placeholder="text">
                 </div>
@@ -15,7 +15,7 @@
                 
             </form>
             <!--<br>-->
-            <a href="/campgrounds">Go Back</a>
+            <a href="/exhibitions">Go Back</a>
         </div>
     </div>
 </div>
