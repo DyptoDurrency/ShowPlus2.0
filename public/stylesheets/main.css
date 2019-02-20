@@ -44,3 +44,26 @@ h1 {
 form {
     margin-top: 40px;
 }
+
+.bg-light {
+    background-color: rgba(110,110,110,.3)!important;
+    /*#f8f9fa*/
+    
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(10,60,230,.9);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(10,50,150,.90);
+}
+
+.ml-auto li a {
+    color: rgba(10,60,230,.9);
+}
+
+.btn-outline-primary {
+    color: rgba(10,60,230,.9);
+    border-color: rgba(10,60,230,.9);
+}

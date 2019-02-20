@@ -14,13 +14,36 @@
                 <a class="navbar-brand" href="/">ShowPlus</a>
             </div>
             <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                     </li>
+                </ul>
+         
                 <ul class="nav navbar-nav ml-auto">
+                    <form class="form-inline my-2 my-lg-0 mr-sm-2">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                     <% if(!currentUser){ %> 
-                        <li><a href="/login">Login</a></li>
-                        <li><a href="/register">Sign Up</a></li>
+                        <li class="my-1 mr-sm-2"><a href="/login">Login</a></li>
+                        <li class="my-1"><a href="/register">Sign Up</a></li>
                     <% } else { %>
-                        <li><a href="#"> Signed In As: <%= currentUser.username %> </a></li>
-                        <li><a href="/logout">Logout</a></li>
+                        <li class="my-1 mr-sm-2"><a href="#"> Signed In As: <%= currentUser.username %> </a></li>
+                        <li class="my-1"><a href="/logout">Logout</a></li>
                     <% } %>  
                 </ul>
             </div>
