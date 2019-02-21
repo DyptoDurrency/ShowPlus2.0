@@ -1,11 +1,22 @@
 <% include ./partials/header %>
 
-<h1>Login!</h1>
 
-<form action="/login" method="POST">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <input type="submit" value="Login!">
-</form>
+<div class="container accessForm rounded-bottom">
+    <h1 class="formTitle rounded-top">Please Log in</h1>
+    <form action="/login" method="POST">
+        <div>
+            <input class="rounded" type="text" name="username" placeholder="username">
+        </div>
+        <div>
+            <input class="rounded" type="password" name="password" placeholder="password">
+        </div>
+        <div>
+           <input class="rounded submitBtn" type="submit" value="Login!">
+           <a class="altLog" href="/register">Or Register</a>
+        </div>
+    </form>
+    
+</div>
+
 
 <% include ./partials/footer %>

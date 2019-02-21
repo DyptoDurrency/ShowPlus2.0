@@ -1,10 +1,15 @@
-h1 {
+:root {
+    --main-bg-grey: rgba(110,110,110,.3);
+    --main-blue: rgba(10,60,230,.9);
+    --main-blue-hover: rgba(10,50,150,.9);
+}
+
+.ctrTitle {
    text-align: center; 
 }
 
 .jumbotron {
-    /*background-color: purple;*/
-    /*color: green;*/
+    padding-top: 12%;
 }
 .card-footer {
     margin-top: 20px;
@@ -46,24 +51,64 @@ form {
 }
 
 .bg-light {
-    background-color: rgba(110,110,110,.3)!important;
+    background-color: var(--main-bg-grey)!important;
     /*#f8f9fa*/
     
 }
+.dropdown-menu.show{
+    background-color: rgba(110,110,110,1);
+    padding: 0;
+}
+.dropdown-item{
+    color: var(--main-blue);
+}
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(10,60,230,.9);
+    color: var(--main-blue);
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgba(10,50,150,.90);
+    color: var(--main-blue-hover);
 }
 
 .ml-auto li a {
-    color: rgba(10,60,230,.9);
+    color: var(--main-blue);
 }
 
 .btn-outline-primary {
-    color: rgba(10,60,230,.9);
-    border-color: rgba(10,60,230,.9);
+    color: var(--main-blue);
+    border-color: var(--main-blue);
+}
+
+.formTitle{
+    background-color: var(--main-blue);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+}
+
+.accessForm{
+    background-color: var(--main-bg-grey);
+    padding: 0px 0px 10% 0px;
+    text-align: center;
+    position: relative;
+    width: 600px;
+    max-width: 70%;
+}
+
+.accessForm input {
+    margin-bottom: 5px;
+    border: 0;
+}
+
+.submitBtn{
+    padding: 5px;
+}
+.submitBtn:hover {
+    border: 1px solid var(--main-blue-hover);
+    padding: 4px;
+}
+
+.altLog {
+    font-size: 0.667em;
 }
