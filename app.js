@@ -1,3 +1,4 @@
+
 var express = require("express"),
     app = express(),
     bodyParser = require("body-parser"),
@@ -9,6 +10,9 @@ var express = require("express"),
     Exhibition = require("./models/exhibition"),
     seedDB = require("./seeds"),
     User = require("./models/user"),
+    // jquery = require("jquery"),
+    // popperjs = require("popper.js"),
+    // bootstrap = require("bootstrap"),
     Comment = require("./models/comment");
 
 // requiring routes
