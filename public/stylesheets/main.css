@@ -1,5 +1,5 @@
 :root {
-    --main-bg-grey: rgba(110,110,110,.3);
+    --main-bg-grey: #F0F0F0;
     --main-blue: rgba(10,60,230,.9);
     --main-blue-hover: rgba(10,50,150,.9);
 }
@@ -10,6 +10,7 @@
 
 .jumbotron {
     padding-top: 12%;
+    background-color: var(--main-bg-grey);
 }
 .card-footer {
     margin-top: 20px;
@@ -56,7 +57,7 @@ form {
     
 }
 .dropdown-menu.show{
-    background-color: rgba(110,110,110,1);
+    background-color: #E5E5E5;
     padding: 0;
 }
 .dropdown-item{
