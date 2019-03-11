@@ -16,7 +16,7 @@ middlewareObj.checkExhibitionOwnership = function(req, res, next){
             } else {
                 
                 // if yes, own exhibition? or redirect
-                if(foundExhibition.author.id.equals(req.user._id)) {
+                if(foundExhibition.author.id.equals(req.user._id) || req.user.isAdmin) {
                     next();
                 } else {
                     req.flash("error", "You don't have permission to do that");
@@ -40,7 +40,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next){
                    res.redirect('/exhibitions');
                 } else {
                 // if yes, own comment? or redirect
-                if(foundComment.author.id.equals(req.user._id)) {
+                if(foundComment.author.id.equals(req.user._id) || req.user.isAdmin) {
                     next();
                 } else {
                     req.flash("error", "You don't have permission to do that");
