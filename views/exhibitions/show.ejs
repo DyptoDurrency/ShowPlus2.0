@@ -20,7 +20,7 @@
                         <%= exhibition.description %> 
                     </p>
                     <p> 
-                        <em> Submitted By <%= exhibition.author.username %> </em> 
+                        <em> Submitted By <a href="/users/<%= exhibition.author.id %>"><%= exhibition.author.username %></a></em> 
                     </p>
                     <% if(currentUser && exhibition.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
                         <a class="btn btn-xs btn-warning" href="/exhibitions/<%= exhibition._id %>/edit">Edit</a>

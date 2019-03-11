@@ -4,13 +4,27 @@
     <h1 class="formTitle rounded-top">Sign Up!</h1>
     <form action="/register" method="POST">
         <div>
+          <input class="rounded" type="text" name="firstName" placeholder="first name">  
+        </div><div>
+          <input class="rounded" type="text" name="lastName" placeholder="last name">  
+        </div>
+        <div>
+          <input class="rounded" type="email" name="email" placeholder="email address">  
+        </div>
+        <div>
           <input class="rounded" type="text" name="username" placeholder="username">  
         </div>
         <div>
             <input class="rounded" type="password" name="password" placeholder="password">
         </div>
         <div>
-            <input class="rounded" type="password" name="adminCode" placeholder="Admin code">
+          <input class="rounded" type="text" name="avatar" placeholder="avatar url">  
+        </div>
+        <div>
+          <input class="rounded" type="text" name="bio" placeholder="short bio">  
+        </div>
+        <div>
+            <input class="rounded" type="password" name="adminCode" placeholder="admin code">
         </div>
         <div>
             <input class="rounded submitBtn" type="submit" value="Sign Up">

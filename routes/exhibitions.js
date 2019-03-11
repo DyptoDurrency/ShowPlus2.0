@@ -45,7 +45,7 @@ router.post("/", middleware.isLoggedIn, function(req, res){
 
 // NEW -- display form to add a new one
 router.get("/new", middleware.isLoggedIn, function(req, res){
-    res.render("exhibitionds/new");
+    res.render("exhibitions/new");
 });
 
 //  SHOW - more info about one specific exhibition
